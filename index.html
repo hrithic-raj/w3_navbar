@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Verdana, sans-serif;
+        }
+
+        /* upper flex divs */
+
+        .logo{
+            padding: 10px;
+            display: flex;
+        }
+        .nav-main{
+            font-family: verdana,sans-serif;
+            display: flex;
+            background-color: white;
+    
+        }
+        .nav-sub{
+            font-family: verdana,sans-serif;
+
+            display: flex;
+            background-color: #282A36;
+            width: auto;
+            height: 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* div under main */
+
+        .nav-main-left{
+            display: flex;
+            list-style-type:none;
+            flex-grow: 3;
+        }
+        
+        .nav-main-right{
+            display: flex;
+            list-style-type: none;
+            flex-grow: 0;
+            align-items: center;
+        }
+
+        /* div under sub */
+        
+        .nav-sub-left{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-grow: 2;
+
+        }
+        .nav-sub-right{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            flex-grow: 3;
+            margin-right: 0px; ;
+        }
+
+        .nav-sub-left a,.nav-sub-right a{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            height: 30px;
+            color: white;
+            padding-right:20px ;
+            text-decoration: none;
+        }
+
+        /* under div main left */
+
+        .nav-main-left a{
+            color:black;
+            text-align: center;
+            padding: 20px;
+            padding-top: 20px;
+            text-decoration: none;
+        }
+       
+        /* under div main right */
+        
+        .nav-main-right a{
+            margin: 20px;
+            text-decoration: none;
+        }
+        
+        .nav-main-right [class^="btn"]{
+            border-radius: 30px;
+            height:5px;
+            border: none;
+            border-radius: 100px;
+            padding: 15px;
+            margin-right: 20px;
+            padding-bottom: 25px;
+            cursor: pointer;
+        }
+        .btn1{
+            background-color: #282A36;
+            color: white;
+            width: 60px;
+
+        }
+        .btn2{
+            color: black;
+            background-color: #FFC0C8;
+            width: 150px;
+        }
+        .btn3{
+            color: black;
+            background-color: #FFF4A2;
+            width: 150px;
+        }
+        .logsign button{
+            height: 45px;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+        }
+        .btn4{
+            color:white;
+            background-color: #01AA6D;
+            width: 100px;
+        }
+        .btn5{
+            color: black;
+            margin-left:0px;
+            background-color: #DCECDF;
+            width:70px ;
+        }
+        .logsign{
+            display: flex;
+            position: inherit;
+            background-color: #DCECDF;
+            border-radius: 30px;
+            margin-right: 10px;
+
+        }
+
+        /* hover */
+
+        .nav-main-left a:hover{
+            background-color:#01AA6D;
+        }
+        .nav-sub-left a:hover{
+            background-color: black;
+        }
+        .nav-sub-right a:hover{
+            background-color: black;
+        }
+
+        /* images */
+        
+        .w3logo{
+            width: 30px;
+            height: 30px;
+        }
+        .home-btn{
+            width:20px;
+            height: 20px;
+        }
+
+        .dark-btn{
+            width: 20px;
+            height: 20px;
+        }
+
+        .earth-btn{
+            width: 20px;
+            height: 20px;
+        }
+
+        .search-btn{
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .arrow{
+            width: 15px;
+            height: 13px;
+        }
+
+        /* responsive */
+
+        @media only screen and (max-width: 1250px){
+            .btn1{
+                display: none;
+            }
+            
+        }
+        @media only screen and (max-width: 1150px){
+            .btn2{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 980px){
+            .btn3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 800px){
+            .ml3{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 670px){
+            .ml2{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 550px){
+            .ml4{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 550px){
+            .ml1{
+                 position: relative;
+                 left:30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-main">
+
+            <div class="logo">
+                <a href="alogo">
+                    <img class="w3logo" src="logo.png" alt="MDB Logo"/>
+                  </a>
+            </div>
+
+            <div class="nav-main-left">
+                <a class="ml1" href="#"><li>Tutorials<img class="arrow" src="arrow.png" alt="drop arrow"></li> </a>
+                <a class="ml2" href="#"><li>References<img class="arrow" src="arrow.png" alt="drop arrow"></li></a>
+                <a class="ml3" href="#"><li>Exercises<img class="arrow" src="arrow.png" alt="drop arrow"></li></a>
+                <a class="ml4" href="#"><li>Bootcamp</li></a>
+            </div>
+
+            <div class="nav-main-right">
+                <button class="btn1">Pro</button>
+                <button class="btn2">Get Certified</button>
+                <button class="btn3">Create Website</button>
+                <div class="logsign">
+                    <button class="btn4">Sign in</button>
+                    <button class="btn5">Log in</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nav-sub">
+
+            <div class="nav-sub-left">
+                <a href=""><img class="home-btn" src="home.jpg" alt="home"></a>
+                <a href="#" class="navbar-item">HTML</a>
+                <a href="#" class="navbar-item">CSS</a>
+                <a href="#" class="navbar-item">JAVASCRIPT</a>
+                <a href="#" class="navbar-item">SQL</a>
+                <a href="#" class="navbar-item">JAVA</a>
+                <a href="#" class="navbar-item">PHP</a>
+                <a href="#" class="navbar-item">BOOTSTRAP</a>
+                <a href="#" style="background-color: #01AA6D;" class="navbar-item">HOW TO</a>
+                <a href="#" class="navbar-item">W3.CSS</a>
+                <a href="#" class="navbar-item">C</a>
+                <a href="#" class="navbar-item">C++</a>
+            </div>
+
+            <div class="nav-sub-right">
+                <a href=""><img class="dark-btn" src="dark.png" alt="dark mode"></a>
+                <a href=""><img class="earth-btn" src="earth.png" alt="globe"></a>
+                <a href=""><img class="search-btn" src="search.png" alt="search"></a>
+            </div>
+                   
+        </div>
+    </div>
+</body>
+</html>
